@@ -30,7 +30,8 @@ serialport.on('open', function() {
     }
     else if(myArgs.length === 3)
     {
-        const filename = myArgs[0]
+	const currentpath = __dirname
+        const filename = currentpath+'/'+myArgs[0]
         const addr = myArgs[1]
         const interval = Number(myArgs[2])
 
